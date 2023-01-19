@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import { useState,useEffect } from 'react';
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Addproduct from '../Add'
 
 function Index() {
 
@@ -67,6 +68,8 @@ function Index() {
         </TableBody>
       </Table>
     </TableContainer>
+
+    <Addproduct data={data} setData={setData}/>
     </div>
   )
 }
